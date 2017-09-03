@@ -1,0 +1,255 @@
+<html>
+
+<head>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Materialize CSS and JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<script src="js/materialize.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="col s4">
+      <ul id="slide-out" class="side-nav table-of-contents fixed">
+        <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#about"><i class="material-icons">person</i>About Me</a></li>
+        <li><a href="#experience"><i class="material-icons">code</i>Experience</a></li>
+        <li><a href="#technology"><i class="material-icons">computer</i>Technology</a></li>
+        <li><a href="#education"><i class="material-icons">bookmark</i>Education</a></li>
+        <li><a href="#connect"><i class="material-icons">share</i>Connect</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="home" class="block  blue-grey darken-4 scrollspy">
+    <div class="row">
+      <div class="pushpin-demo-nav" data-target="home" style="top: 0px;">
+      </div>
+    </div>
+    <div class="container">
+      <div class="col s12">
+        <h1 class="center white-text intro" style="padding-top: 20%;"> Daniel Robinson</h1>
+      </div>
+      <h4 class="center white-text intro">.NET Developer</h4>
+      <h5 class="center type-it white-text intro"></h5>
+      <div class="row">
+        <div class="col s12 center" style="padding-top: 50px;">
+          <a class="waves-effect waves-light btn-large blue-grey darken-3" href="#experience">Explore Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="about" class="block blue-grey darken-1 scrollspy">
+  <nav class="pushpin-demo-nav" data-target="about" style="top: 0px;">
+    <div class="nav-wrapper blue-grey darken-1">
+      <div class="container">
+        <a href="#" class="brand-logo center" id="about_text">About Me</a>
+      </div>
+    </div>
+  </nav>
+</div>
+<div id="experience" class="block blue-grey darken-2 scrollspy">
+  <nav class="pushpin-demo-nav" data-target="experience" style="top: 0px;">
+    <div class="nav-wrapper blue-grey darken-2">
+      <div class="container">
+        <a href="#" class="brand-logo center" id="experience_text">Experience</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="technology" class="block blue-grey darken-3 scrollspy">
+  <nav class="pushpin-demo-nav" data-target="technology" style="top: 0px;">
+    <div class="nav-wrapper blue-grey darken-3">
+      <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo">Blue</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Blue Link 1</a></li>
+          <li><a href="#!">Blue Link 2</a></li>
+          <li><a href="#!">Blue Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div id="education" class="block grey darken-1 scrollspy">
+  <nav class="pushpin-demo-nav" data-target="education" style="top: 0px;">
+    <div class="nav-wrapper grey darken-1">
+      <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo">Blue</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Blue Link 1</a></li>
+          <li><a href="#!">Blue Link 2</a></li>
+          <li><a href="#!">Blue Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div id="connect" class="block blue-grey lighten-1 scrollspy">
+  <nav class="pushpin-demo-nav" data-target="connect" style="top: 0px;">
+    <div class="nav-wrapper blue-grey lighten-1">
+      <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo">Blue</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!">Blue Link 1</a></li>
+          <li><a href="#!">Blue Link 2</a></li>
+          <li><a href="#!">Blue Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div style="background-color: #78909c;">&nbsp;</div>
+
+</body>
+
+</html>
+
+<style>
+  #last_name {
+    font-weight: 500 !important;
+  }
+
+  #first_name {
+    font-weight: 200 !important;
+  }
+
+
+  html,
+  body,
+  .block {
+    height: 100%;
+  }
+
+  a .active {
+    background-color: #red !important;
+  }
+
+  .table-of-contents a:hover {
+
+
+    border-left: 5px solid #263238 !important;
+  }
+
+  .table-of-contents a.active {
+
+
+    border-left: 5px solid #263238 !important;
+  }
+
+  .container {
+    padding-left: 200px !important;
+  }
+
+  nav {
+    padding-left: 200px !important;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .container {
+      padding-left: 0 !important;
+    }
+    nav {
+      padding-left: 0 !important;
+    }
+  }
+</style>
+
+
+
+
+
+<script>
+  $('.button-collapse').sideNav();
+
+  $('.button-collapse').sideNav({
+    menuWidth: 200 // Default is 300
+
+  });
+
+
+
+  $('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+
+  var options = [{
+      selector: '#about',
+      offset: 0,
+      callback: function(el) {
+        Materialize.fadeInImage('#about_text');
+      }
+    },
+    {
+      selector: '#experience',
+      offset: 0,
+      callback: function(el) {
+        Materialize.fadeInImage('#experience_text');
+      }
+    },
+    {
+      selector: '#staggered-test',
+      offset: 400,
+      callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }
+    },
+    {
+      selector: '#image-test',
+      offset: 500,
+      callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }
+    }
+  ];
+  Materialize.scrollFire(options);
+
+  $(document).ready(function() {
+    $('.scrollspy').scrollSpy({
+      scrollOffset: 0
+    });
+
+
+
+    Materialize.fadeInImage('.intro');
+
+
+
+
+
+  });
+  $('.type-it').typeIt({
+      speed: 150,
+      lifeLike: false,
+      autoStart: false
+    })
+    .tiPause(1000)
+    .tiType('Console.Writel')
+    .tiDelete(1)
+    .tiType('Line("Welfc)')
+    .tiDelete(3)
+    .tiType('come!");');
+</script>
