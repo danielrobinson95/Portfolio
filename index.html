@@ -1,23 +1,14 @@
 <html>
-
 <head>
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Materialize CSS and JS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-<script src="js/materialize.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
-
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Materialize CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
 </head>
-
 <body>
-
   <div class="container">
     <div class="col s4">
       <ul id="slide-out" class="side-nav table-of-contents fixed">
@@ -33,7 +24,7 @@
 
   <div id="home" class="block blue-grey darken-4 scrollspy">
     <div class="row">
-      <div class="pushpin-demo-nav" data-target="home" style="top: 0px;">
+      <div  data-target="home" style="top: 0px;">
       </div>
     </div>
     <div class="container">
@@ -50,75 +41,140 @@
     </div>
   </div>
 
-
-<div id="about" class="block blue-grey darken-1 scrollspy">
-  <nav class="pushpin-demo-nav" data-target="about" style="top: 0px;">
-    <div class="nav-wrapper blue-grey darken-1">
-      <div class="container">
-        <a href="#" class="brand-logo center" id="about_text">About Me</a>
+  <div id="about" class="block blue-grey darken-1 scrollspy">
+    <nav  data-target="about" style="top: 0px;">
+      <div class="nav-wrapper blue-grey darken-1">
+        <div class="container">
+          <a href="#" class="brand-logo center" id="about_text">About Me</a>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
-<div id="experience" class="block blue-grey darken-2 scrollspy">
-  <nav class="pushpin-demo-nav" data-target="experience" style="top: 0px;">
-    <div class="nav-wrapper blue-grey darken-2">
-      <div class="container">
-        <a href="#" class="brand-logo center" id="experience_text">Experience</a>
-      </div>
-    </div>
-  </nav>
-</div>
+    </nav>
 
-<div id="technology" class="block blue-grey darken-3 scrollspy">
-  <nav class="pushpin-demo-nav" data-target="technology" style="top: 0px;">
-    <div class="nav-wrapper blue-grey darken-3">
-      <div class="container">
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo">Blue</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Blue Link 1</a></li>
-          <li><a href="#!">Blue Link 2</a></li>
-          <li><a href="#!">Blue Link 3</a></li>
+    <div class="container profile_image" id="about_section">
+      <div class="row">
+        <div class="col s12 center">
+          <img src="images\AAEAAQAAAAAAAAe1AAAAJDU2NzllN2ZkLWY3MGYtNGViNC05ZDA1LTBhY2Q3NTI5MmVmYw.jpg" id="profile_image" class="circle profile_image" style="margin-top: 10%;" />
+        </div>
+      </div>
+      <div class="profile_details center">
+        <ul>
+          <li>
+            <label>Name</label>
+            <div>
+              <p>Daniel Robinson</p>
+            </div>
+          </li>
+          <li>
+            <label>Birthday</label>
+            <div>
+              <p>October 31, 1995</p>
+            </div>
+          </li>
+          <li>
+            <label>Titles</label>
+            <div>
+              <p>.NET Developer</p>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-  </nav>
-</div>
-<div id="education" class="block grey darken-1 scrollspy">
-  <nav class="pushpin-demo-nav" data-target="education" style="top: 0px;">
-    <div class="nav-wrapper grey darken-1">
-      <div class="container">
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo">Blue</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Blue Link 1</a></li>
-          <li><a href="#!">Blue Link 2</a></li>
-          <li><a href="#!">Blue Link 3</a></li>
-        </ul>
-      </div>
+  </div>
+
+
+
+
+
+
+    <div id="experience" class="block blue-grey darken-2 scrollspy">
+      <nav  data-target="experience" style="top: 0px;">
+        <div class="nav-wrapper blue-grey darken-2">
+          <div class="container">
+            <a href="#" class="brand-logo center" id="experience_text">Experience</a>
+          </div>
+        </div>
+      </nav>
+
+
     </div>
-  </nav>
-</div>
 
-<div id="connect" class="block blue-grey lighten-1 scrollspy">
-  <nav class="pushpin-demo-nav" data-target="connect" style="top: 0px;">
-    <div class="nav-wrapper blue-grey lighten-1">
-      <div class="container">
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-        <a href="#" class="brand-logo">Blue</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Blue Link 1</a></li>
-          <li><a href="#!">Blue Link 2</a></li>
-          <li><a href="#!">Blue Link 3</a></li>
-        </ul>
+
+  <div id="technology" class="block blue-grey darken-3 scrollspy">
+    <nav  data-target="technology" style="top: 0px;">
+      <div class="nav-wrapper blue-grey darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo center">Technology</a>
+        </div>
       </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col s4 m2" style="margin-top: 15%;">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/dotnet.jpg" style="padding: 5% 5% 5% 5%;">
+            </div>
+            <div class="card-title black-text center">.NET</div>
+
+          </div>
+        </div>
+        <div class="col s4 m2" style="margin-top: 15%;">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/html5.png" style="padding: 5% 5% 5% 5%;" >
+            </div>
+            <div class="card-title black-text center">Html5</div>
+
+          </div>
+        </div>
+        <div class="col s4 m2" style="margin-top: 15%;">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/css3.png" style="padding: 5% 5% 5% 5%;">
+            </div>
+            <div class="card-title black-text center">Css3</div>
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
-  </nav>
-</div>
+  </div>
+  <div id="education" class="block grey darken-1 scrollspy">
+    <nav  data-target="education" style="top: 0px;">
+      <div class="nav-wrapper grey darken-1">
+        <div class="container">
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo">Blue</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!">Blue Link 1</a></li>
+            <li><a href="#!">Blue Link 2</a></li>
+            <li><a href="#!">Blue Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="connect" class="block blue-grey lighten-1 scrollspy">
+    <nav  data-target="connect" style="top: 0px;">
+      <div class="nav-wrapper blue-grey lighten-1">
+        <div class="container">
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo">Blue</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!">Blue Link 1</a></li>
+            <li><a href="#!">Blue Link 2</a></li>
+            <li><a href="#!">Blue Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
 
-<div style="background-color: #78909c;">&nbsp;</div>
+  <div style="background-color: #78909c;">&nbsp;</div>
 
 </body>
 
@@ -172,6 +228,12 @@
       padding-left: 0 !important;
     }
   }
+
+  #profile_image {
+    border-width: medium !important;
+    border-color: white !important;
+    border-style: solid !important;
+  }
 </style>
 
 
@@ -188,14 +250,7 @@
 
 
 
-  $('.pushpin-demo-nav').each(function() {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-    $this.pushpin({
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height()
-    });
-  });
+
 
   var options = [{
       selector: '#about',
@@ -212,10 +267,10 @@
       }
     },
     {
-      selector: '#staggered-test',
-      offset: 400,
+      selector: '#profile_image',
+      offset: 0,
       callback: function(el) {
-        Materialize.showStaggeredList($(el));
+        Materialize.fadeInImage('#about_section');
       }
     },
     {
