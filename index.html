@@ -99,7 +99,7 @@
 
 
   <div id="experience" class="block blue-grey darken-2 scrollspy">
-    <nav data-target="experience" style="top: 0px;"class="pushpin-nav">
+    <nav data-target="experience" style="top: 0px;" class="pushpin-nav">
       <div class="nav-wrapper blue-grey darken-2">
         <div class="container">
           <a href="#" class="brand-logo center" id="experience_text">Experience</a>
@@ -108,12 +108,12 @@
     </nav>
   </div>
   <div id="technology" class="technology_section blue-grey lighten-3 scrollspy ">
-      <nav data-target="technology" style="top: 0px;" class="">
-        <div class="nav-wrapper  blue-grey lighten-3">
-            <a href="#" class="brand-logo center">Technology</a>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
+    <nav data-target="technology" style="top: 0px;" class="">
+      <div class="nav-wrapper  blue-grey lighten-3">
+        <a href="#" class="brand-logo center">Technology</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
     <div class="container">
       <div class="row" style="margin-top: 5%;">
         <div class="col s6 m3 xl3" style="">
@@ -172,7 +172,7 @@
               <img src="images/vs.png" style="padding: 5% 5% 5% 5%;">
             </div>
             <div class="card-content center">
-              <p >VS</p>
+              <p>VS</p>
             </div>
           </div>
         </div>
@@ -229,8 +229,8 @@
   </nav>
   <nav data-target="technology" style="top: 0px;" class="pushpin-nav">
     <div class="nav-wrapper  blue-grey lighten-3">
-        <a href="#" class="brand-logo center">Technology</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo center">Technology</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -256,13 +256,10 @@
 </html>
 
 <style>
-
   // Class for when element is above threshold
   .pin-top {
     position: relative;
-  }
-
-  // Class for when element is below threshold
+  } // Class for when element is below threshold
   .pin-bottom {
     position: relative;
   }
@@ -282,7 +279,6 @@
   body,
   .block {
     height: 100%;
-
   }
 
   .technology_section {
@@ -337,9 +333,6 @@
 </style>
 
 <script>
-
-
-
   $('.button-collapse').sideNav();
 
   $('.button-collapse').sideNav({
@@ -379,16 +372,16 @@
   Materialize.scrollFire(options);
 
   $('.pushpin-nav').each(function() {
-   var $this = $(this);
-   var $target = $('#' + $(this).attr('data-target'));
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
 
-   $this.pushpin({
+    $this.pushpin({
 
-     top: $target.offset().top,
-     bottom: $target.offset().top + $target.outerHeight() - $this.height(),
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height(),
 
-   });
- });
+    });
+  });
 
 
 
