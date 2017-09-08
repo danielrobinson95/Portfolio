@@ -1,0 +1,77 @@
+#github:hover #github-url {
+  display: block !important;
+}
+
+#email:hover #email-url {
+  display: block !important;
+}
+
+#linkedin:hover #linkedin-url {
+  display: block !important;
+}
+
+#github-url, #email-url, #linkedin-url {
+  display: none !important;
+}
+
+#github-url h4, #email-url h4, #linkedin-url h4 {
+  border: 0.01em solid black;
+  border-radius: 20px;
+}
+
+#last_name {
+  font-weight: 500 !important;
+}
+
+#first_name {
+  font-weight: 200 !important;
+}
+
+.block {
+  height: 100%;
+}
+
+.technology_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a .active {
+  background-color: #red !important;
+}
+
+.table-of-contents a:hover {
+  border-left: 5px solid #263238 !important;
+}
+
+.table-of-contents a.active {
+  border-left: 5px solid #263238 !important;
+}
+
+.container {
+  padding-left: 200px !important;
+}
+
+nav {
+  padding-left: 200px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding-left: 0 !important;
+  }
+  nav {
+    padding-left: 0 !important;
+  }
+}
+
+#profile_image {
+  border-width: medium !important;
+  border-color: white !important;
+  border-style: solid !important;
+}
+
+html {
+  background-color: #78909c;
+}

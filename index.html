@@ -1,19 +1,13 @@
 <html>
 
 <head>
-  <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Materialize CSS and JS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css\materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="js/materialize.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+  <link rel="stylesheet" href="css\site.min.css">
 </head>
 
 <body>
-
-
-
   <div class="container">
     <div class="col s4">
       <ul id="slide-out" class="side-nav table-of-contents fixed">
@@ -44,23 +38,15 @@
       </div>
     </div>
   </div>
-
-
-
-
-
   <div id="about" class="block blue-grey darken-1 scrollspy">
     <nav data-target="about" style="top: 0px;" class="">
       <div class="nav-wrapper blue-grey darken-1">
-        <div class="container">
-          <a href="#" class="brand-logo center" id="about_text">About Me</a>
-        </div>
+        <a href="#" class="brand-logo center" id="about_text">About Me</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
       <div id="place">&nbsp;</div>
     </nav>
-
     <div class="container profile_image pushpin-content" id="about_section">
-
       <div class="row">
         <div class="col s12 center">
           <img src="images\me.jpg" id="profile_image" class="circle profile_image" style="margin-top: 10%;" />
@@ -96,14 +82,11 @@
       </div>
     </div>
   </div>
-
-
   <div id="experience" class="block blue-grey darken-2 scrollspy">
     <nav data-target="experience" style="top: 0px;" class="pushpin-nav">
       <div class="nav-wrapper blue-grey darken-2">
-        <div class="container">
-          <a href="#" class="brand-logo center" id="experience_text">Experience</a>
-        </div>
+        <a href="#" class="brand-logo center" id="experience_text">Experience</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -214,16 +197,57 @@
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
+    <div class="container hide-on-med-and-down">
+      <div class="row" style="margin-top:15%;" id="github">
+        <div class="col s1 left-align">
+          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="col s11 left-align center" id="github-url">
+          <h4 class="&nbsp;">&nbsp;https://github.com/danielrobinson95/</h4>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 5%;" id="linkedin">
+        <div class="col s1 left-align">
+          <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="col s11 left-align center" id="linkedin-url">
+          <h4>&nbsp;https://www.linkedin.com/in/danielrobinson95/</h4>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 5%;" id="email">
+        <div class="col s1 left-align">
+          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="col s11 left-align center" id="email-url">
+          <h4>&nbsp;danielrobinson095@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container hide-on-large-only">
+      <div class="row " style="margin-top:20%;">
+        <div class="col s12 center ">
+          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center">
+          <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center">
+          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
   </div>
   <div style="background-color: #78909c;">
     &nbsp;
   </div>
-
   <nav data-target="about" style="top: 0px;" class="pushpin-nav">
     <div class="nav-wrapper blue-grey darken-1">
-      <div class="container">
-        <a href="#" class="brand-logo center" id="about_text">About Me</a>
-      </div>
+      <a href="#" class="brand-logo center" id="about_text">About Me</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
     <div id="place">&nbsp;</div>
   </nav>
@@ -233,175 +257,30 @@
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <nav data-target="education" style="top: 0px;" class="pushpin-nav">
     <div class="nav-wrapper  blue-grey lighten-2">
       <a href="#" class="brand-logo center">Education</a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <nav data-target="connect" style="top: 0px;" class="pushpin-nav">
     <div class="nav-wrapper blue-grey lighten-1">
       <a href="#" class="brand-logo center">Connect</a>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
-
-
-
+  <nav data-target="experience" style="top: 0px;" class="pushpin-nav">
+    <div class="nav-wrapper blue-grey darken-2">
+      <a href="#" class="brand-logo center" id="experience_text">Experience</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 </body>
 
 </html>
 
-<style>
-  // Class for when element is above threshold
-  .pin-top {
-    position: relative;
-  } // Class for when element is below threshold
-  .pin-bottom {
-    position: relative;
-  }
-
-
-
-
-  #last_name {
-    font-weight: 500 !important;
-  }
-
-  #first_name {
-    font-weight: 200 !important;
-  }
-
-  html,
-  body,
-  .block {
-    height: 100%;
-  }
-
-  .technology_section {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  a .active {
-    background-color: #red !important;
-  }
-
-
-  .table-of-contents a:hover {
-
-
-    border-left: 5px solid #263238 !important;
-  }
-
-  .table-of-contents a.active {
-
-
-    border-left: 5px solid #263238 !important;
-  }
-
-  .container {
-    padding-left: 200px !important;
-  }
-
-  nav {
-    padding-left: 200px !important;
-  }
-
-  @media only screen and (max-width: 992px) {
-    .container {
-      padding-left: 0 !important;
-    }
-    nav {
-      padding-left: 0 !important;
-    }
-  }
-
-  #profile_image {
-    border-width: medium !important;
-    border-color: white !important;
-    border-style: solid !important;
-  }
-
-  html {
-    background-color: #78909c;
-  }
-</style>
-
-<script>
-  $('.button-collapse').sideNav();
-
-  $('.button-collapse').sideNav({
-    menuWidth: 200 // Default is 300
-
-  });
-
-  var options = [{
-      selector: '#about',
-      offset: 0,
-      callback: function(el) {
-        Materialize.fadeInImage('#about_text');
-      }
-    },
-    {
-      selector: '#experience',
-      offset: 0,
-      callback: function(el) {
-        Materialize.fadeInImage('#experience_text');
-      }
-    },
-    {
-      selector: '#profile_image',
-      offset: 0,
-      callback: function(el) {
-        Materialize.fadeInImage('#about_section');
-      }
-    },
-    {
-      selector: '#image-test',
-      offset: 500,
-      callback: function(el) {
-        Materialize.fadeInImage($(el));
-      }
-    }
-  ];
-  Materialize.scrollFire(options);
-
-  $('.pushpin-nav').each(function() {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-
-    $this.pushpin({
-
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height(),
-
-    });
-  });
-
-
-
-
-  $(document).ready(function() {
-    $('.scrollspy').scrollSpy({
-      scrollOffset: 0
-    });
-
-    Materialize.fadeInImage('.intro');
-  });
-  $('.type-it').typeIt({
-      speed: 150,
-      lifeLike: false,
-      autoStart: false
-    })
-    .tiPause(1000)
-    .tiType('Console.Writel')
-    .tiDelete(1)
-    .tiType('Line("Welfc)')
-    .tiDelete(3)
-    .tiType('come!");');
-</script>
+<script src="https://use.fontawesome.com/2ee3ed9a96.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
+<script src="js/portfolio.js"></script>
