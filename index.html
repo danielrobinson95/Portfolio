@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+
+
   <div class="container">
     <div class="col s4">
       <ul id="slide-out" class="side-nav table-of-contents fixed">
@@ -32,7 +35,7 @@
       <div class="col s12">
         <h1 class="center white-text intro" style="padding-top: 20%;"> Daniel Robinson</h1>
       </div>
-      <h4 class="center white-text intro">.NET Developer</h4>
+      <h4 class="center white-text intro">Software Engineer</h4>
       <h5 class="center type-it white-text intro"></h5>
       <div class="row">
         <div class="col s12 center" style="padding-top: 50px;">
@@ -41,15 +44,23 @@
       </div>
     </div>
   </div>
+
+
+
+
+
   <div id="about" class="block blue-grey darken-1 scrollspy">
-    <nav data-target="about" style="top: 0px;">
+    <nav data-target="about" style="top: 0px;" class="">
       <div class="nav-wrapper blue-grey darken-1">
         <div class="container">
           <a href="#" class="brand-logo center" id="about_text">About Me</a>
         </div>
       </div>
+      <div id="place">&nbsp;</div>
     </nav>
-    <div class="container profile_image" id="about_section">
+
+    <div class="container profile_image pushpin-content" id="about_section">
+
       <div class="row">
         <div class="col s12 center">
           <img src="images\me.jpg" id="profile_image" class="circle profile_image" style="margin-top: 10%;" />
@@ -72,7 +83,7 @@
           <li>
             <label>Titles</label>
             <div>
-              <p>.NET Developer</p>
+              <p>Software Engineer</p>
             </div>
           </li>
           <li>
@@ -85,8 +96,10 @@
       </div>
     </div>
   </div>
+
+
   <div id="experience" class="block blue-grey darken-2 scrollspy">
-    <nav data-target="experience" style="top: 0px;">
+    <nav data-target="experience" style="top: 0px;"class="pushpin-nav">
       <div class="nav-wrapper blue-grey darken-2">
         <div class="container">
           <a href="#" class="brand-logo center" id="experience_text">Experience</a>
@@ -94,8 +107,8 @@
       </div>
     </nav>
   </div>
-  <div id="technology" class="technology_section blue-grey lighten-3 scrollspy">
-      <nav data-target="technology" style="top: 0px;">
+  <div id="technology" class="technology_section blue-grey lighten-3 scrollspy ">
+      <nav data-target="technology" style="top: 0px;" class="">
         <div class="nav-wrapper  blue-grey lighten-3">
             <a href="#" class="brand-logo center">Technology</a>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -189,40 +202,74 @@
   <div id="education" class="block blue-grey lighten-2 scrollspy">
     <nav data-target="education" style="top: 0px;">
       <div class="nav-wrapper  blue-grey lighten-2">
-        <div class="container">
-          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-          <a href="#" class="brand-logo">Blue</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#!">Blue Link 1</a></li>
-            <li><a href="#!">Blue Link 2</a></li>
-            <li><a href="#!">Blue Link 3</a></li>
-          </ul>
-        </div>
+        <a href="#" class="brand-logo center">Education</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
   <div id="connect" class="block blue-grey lighten-1 scrollspy">
     <nav data-target="connect" style="top: 0px;">
       <div class="nav-wrapper blue-grey lighten-1">
-        <div class="container">
-          <ul id="nav-mobile" class="left hide-on-large-only">
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large left-align"><i class="material-icons">menu</i></a>
-          </ul>
-          <a href="#" class="brand-logo">Blue</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#!">Blue Link 1</a></li>
-            <li><a href="#!">Blue Link 2</a></li>
-            <li><a href="#!">Blue Link 3</a></li>
-          </ul>
-        </div>
+        <a href="#" class="brand-logo center">Connect</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
+  <div style="background-color: #78909c;">
+    &nbsp;
+  </div>
+
+  <nav data-target="about" style="top: 0px;" class="pushpin-nav">
+    <div class="nav-wrapper blue-grey darken-1">
+      <div class="container">
+        <a href="#" class="brand-logo center" id="about_text">About Me</a>
+      </div>
+    </div>
+    <div id="place">&nbsp;</div>
+  </nav>
+  <nav data-target="technology" style="top: 0px;" class="pushpin-nav">
+    <div class="nav-wrapper  blue-grey lighten-3">
+        <a href="#" class="brand-logo center">Technology</a>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <nav data-target="education" style="top: 0px;" class="pushpin-nav">
+    <div class="nav-wrapper  blue-grey lighten-2">
+      <a href="#" class="brand-logo center">Education</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <nav data-target="connect" style="top: 0px;" class="pushpin-nav">
+    <div class="nav-wrapper blue-grey lighten-1">
+      <a href="#" class="brand-logo center">Connect</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+
+
 </body>
 
 </html>
 
 <style>
+
+  // Class for when element is above threshold
+  .pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+
+
+
   #last_name {
     font-weight: 500 !important;
   }
@@ -235,6 +282,7 @@
   body,
   .block {
     height: 100%;
+
   }
 
   .technology_section {
@@ -284,11 +332,14 @@
   }
 
   html {
-    background-color: #b0bec5;
+    background-color: #78909c;
   }
 </style>
 
 <script>
+
+
+
   $('.button-collapse').sideNav();
 
   $('.button-collapse').sideNav({
@@ -326,6 +377,21 @@
     }
   ];
   Materialize.scrollFire(options);
+
+  $('.pushpin-nav').each(function() {
+   var $this = $(this);
+   var $target = $('#' + $(this).attr('data-target'));
+
+   $this.pushpin({
+
+     top: $target.offset().top,
+     bottom: $target.offset().top + $target.outerHeight() - $this.height(),
+
+   });
+ });
+
+
+
 
   $(document).ready(function() {
     $('.scrollspy').scrollSpy({
