@@ -1,27 +1,46 @@
 #github:hover{
+  cursor: pointer;
   #github-url{
-    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+
   }
 }
 
+.pointer:hover{
+  cursor: pointer;
+}
+
 #email:hover{
+  cursor: pointer;
   #email-url{
-    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+    padding:{
+      left: 20px;
+    }
+
   }
 }
 
 #linkedin:hover{
+  cursor: pointer;
   #linkedin-url{
-    display: block !important;
+    visibility: visible !important;
+    opacity: 1;
+
   }
 }
 
 #github-url, #email-url, #linkedin-url{
-  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+
   h4{
     border: .01em solid black{
       radius: 20px;
-    }    
+    }
   }
 
 }
