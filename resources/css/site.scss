@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway|Fjalla+One');
 
 $comforta: 'Comfortaa', cursive;
 $raleway: 'Raleway', sans-serif;
+$fjala: 'Fjalla One', sans-serif;
 
 .jumbotron{
         padding: 0 !important;
@@ -21,8 +22,8 @@ $raleway: 'Raleway', sans-serif;
     width: 100vw;
     height: 100vh;
     .container{
-        .row{
-          padding-top: 15%;
+        .pad{
+          padding-top: 10%;
 
         }
 
@@ -63,10 +64,10 @@ h3{
   color: black;
   cursor: pointer;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: .3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .1s; /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards;
   animation-name: resize;
-  animation-duration: .3s;
+  animation-duration: .1s;
   animation-fill-mode: forwards;
 
 }
@@ -88,4 +89,26 @@ h3{
     text-transform: initial !important;
 
   }
+}
+
+#knowledge{
+  h5{
+    font-size: 300%;
+    padding-top: 10%;
+    font-family: $fjala;
+  }
+  i{
+    padding-bottom: 10px;
+  }
+
+  h1{
+    font-size: 275%;
+  }
+}
+
+
+#dr{
+  width: 4%;
+  height:  4%;
+  padding-top: 5%;
 }

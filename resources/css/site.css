@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway|Fjalla+One");
 .jumbotron {
   padding: 0 !important;
   height: 100vh;
@@ -17,8 +17,8 @@
   height: 100vh;
 }
 
-.layer .container .row {
-  padding-top: 15%;
+.layer .container .pad {
+  padding-top: 10%;
 }
 
 .layer .container #explorer-button-group {
@@ -53,11 +53,11 @@ h3 {
   cursor: pointer;
   -webkit-animation-name: example;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: .3s;
+  -webkit-animation-duration: .1s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards;
   animation-name: resize;
-  animation-duration: .3s;
+  animation-duration: .1s;
   animation-fill-mode: forwards;
 }
 
@@ -82,4 +82,24 @@ h3 {
 
 #scroll-buttons a {
   text-transform: initial !important;
+}
+
+#knowledge h5 {
+  font-size: 300%;
+  padding-top: 10%;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#knowledge i {
+  padding-bottom: 10px;
+}
+
+#knowledge h1 {
+  font-size: 275%;
+}
+
+#dr {
+  width: 4%;
+  height: 4%;
+  padding-top: 5%;
 }
