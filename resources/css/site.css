@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:700|Raleway");
+.jumbotron {
+  padding: 0 !important;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url("../images/bg-img.jpg");
+  background-size: 100% 100%;
+}
+
+.layer {
+  background-color: rgba(55, 71, 79, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.layer .container .row {
+  padding-top: 15%;
+}
+
+.layer .container #explorer-button-group {
+  padding-top: 3%;
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 600%;
+}
+
+h3 {
+  font-family: "Comfortaa", cursive;
+  font-size: 300%;
+}
+
+#explore-button {
+  all: initial;
+  border-radius: 20px;
+  border: 3px solid #1de9b6;
+  font-weight: 900 !important;
+  padding: 15px 40px 15px 40px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+
+#explore-button:hover {
+  font-family: "Comfortaa", cursive;
+  font-weight: 900 !important;
+  background-color: #1de9b6;
+  color: black;
+  cursor: pointer;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .3s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  animation-name: resize;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes resize {
+  from {
+    padding: 15px 40px 15px 40px;
+  }
+  to {
+    padding: 15px 50px 15px 50px;
+  }
+}
+
+/* Standard syntax */
+@keyframes resize {
+  from {
+    padding: 15px 40px 15px 40px;
+  }
+  to {
+    padding: 15px 50px 15px 50px;
+  }
+}
+
+#scroll-buttons a {
+  text-transform: initial !important;
+}

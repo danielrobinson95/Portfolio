@@ -1,289 +1,47 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css\materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css\site.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Robinson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/css/site.css">
 </head>
-
 <body>
-  <div class="container">
-    <div class="col s4">
-      <ul id="slide-out" class="side-nav table-of-contents fixed">
-        <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="#about"><i class="material-icons">person</i>About Me</a></li>
-        <!-- <li><a href="#experience"><i class="material-icons">code</i>Experience</a></li> -->
-        <li><a href="#technology"><i class="material-icons">computer</i>Technology</a></li>
-        <!-- <li><a href="#education"><i class="material-icons">bookmark</i>Education</a></li> -->
-        <li><a href="#connect"><i class="material-icons">share</i>Connect</a></li>
-      </ul>
+    <div class="jumbotron">
+        <div class="layer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 white-text">
+                    <h1 class="center-align">Daniel Robinson</h1>
+                    <h3 class="center type-it white-text intro"></h3>
+                </div>
+            </div>
+            <div class="row center-align" id="explorer-button-group">
+              <a class="btn-flat btn-large waves-effect waves" id="explore-button">Explore Projects</a>
+            </div>
+            <div class="row center-align" id="scroll-buttons">
+              <a class="grey-text text-lighten-3 btn-flat waves-effect waves">Learn more about me</a>
+              <br />
+              <a class="grey-text text-lighten-3 btn-flat waves-effect waves"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
-  <div id="home" class="block blue-grey darken-4 scrollspy">
-    <div class="row">
-      <div data-target="home" style="top: 0px;">
-      </div>
-    </div>
-    <div class="container">
-      <div class="col s12">
-        <h1 class="center white-text intro" style="padding-top: 20%;"> Daniel Robinson</h1>
-      </div>
-      <h4 class="center white-text intro">Software Engineer</h4>
-      <h5 class="center type-it white-text intro"></h5>
-      <div class="row">
-        <div class="col s12 center" style="padding-top: 50px;">
-          <a class="waves-effect waves-light btn-large blue-grey darken-3" href="#experience">Explore Projects</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="about" class="block blue-grey darken-1 scrollspy">
-    <nav data-target="about" style="top: 0px;" class="">
-      <div class="nav-wrapper blue-grey darken-1">
-        <a href="#" class="brand-logo center" id="about_text">About Me</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-      <div id="place">&nbsp;</div>
-    </nav>
-    <div class="container profile_image pushpin-content" id="about_section">
-      <div class="row">
-        <div class="col s12 center">
-          <img src="images\me.jpg" id="profile_image" class="circle profile_image" style="margin-top: 10%;" />
-        </div>
-      </div>
-      <div class="profile_details center">
-        <ul>
-          <li>
-            <label>Name</label>
-            <div>
-              <p>Daniel Robinson</p>
-            </div>
-          </li>
-          <li>
-            <label>Birthday</label>
-            <div>
-              <p>October 31, 1995</p>
-            </div>
-          </li>
-          <li>
-            <label>Titles</label>
-            <div>
-              <p>Software Engineer</p>
-            </div>
-          </li>
-          <li>
-            <label>Location</label>
-            <div>
-              <p>Orlando, FL</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- <div id="experience" class="block blue-grey darken-2 scrollspy">
-    <nav data-target="experience" style="top: 0px;" class="pushpin-nav">
-      <div class="nav-wrapper blue-grey darken-2">
-        <a href="#" class="brand-logo center" id="experience_text">Experience</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div> -->
-  <div id="technology" class="technology_section blue-grey lighten-3 scrollspy ">
-    <nav data-target="technology" style="top: 0px;" class="">
-      <div class="nav-wrapper  blue-grey lighten-3">
-        <a href="#" class="brand-logo center">Technology</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row" style="margin-top: 5%;">
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/dotnet.jpg" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>.NET</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/html5.jpg" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>Html5</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/css3.jpg" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>Css3</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/js.jpg" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>Javascript</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/xamarin.png" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>Xamarin</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/vs.png" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p>VS</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sql.png" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p class="inline">MS&nbsp;SQL</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s6 m3 xl3" style="">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/tableau.png" style="padding: 5% 5% 5% 5%;">
-            </div>
-            <div class="card-content center">
-              <p class="inline">Tableau</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div id="education" class="block blue-grey lighten-2 scrollspy">
-    <nav data-target="education" style="top: 0px;">
-      <div class="nav-wrapper  blue-grey lighten-2">
-        <a href="#" class="brand-logo center">Education</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div> -->
-  <div id="connect" class="block blue-grey lighten-1 scrollspy">
-    <nav data-target="connect" style="top: 0px;">
-      <div class="nav-wrapper blue-grey lighten-1">
-        <a href="#" class="brand-logo center">Connect</a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-    <div class="container hide-on-med-and-down">
-      <div class="row" style="margin-top:15%;" id="github" onclick="window.open('https://github.com/danielrobinson95/', '_blank')">
-        <div class="col s1 left-align">
-          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-        </div>
-        <div class="col s11 left-align center" id="github-url">
-          <h4 class="&nbsp;">&nbsp;https://github.com/danielrobinson95/</h4>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 5%;" id="linkedin" onclick="window.open('https://www.linkedin.com/in/danielrobinson95/', '_blank')">
-        <div class="col s1 left-align">
-          <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>
-        </div>
-        <div class="col s11 left-align center" id="linkedin-url">
-          <h4>&nbsp;https://www.linkedin.com/in/danielrobinson95/</h4>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 5%;" id="email" onclick="window.location('mailto:danielrobinson095@gmail.com');">
-        <div class="col s1 left-align">
-          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-        </div>
-        <div class="col s11 left-align center" id="email-url">
-          <h4>&nbsp;danielrobinson095@gmail.com</h4>
-        </div>
-      </div>
-    </div>
-    <div class="container hide-on-large-only">
-      <div class="row " style="margin-top:20%;">
-        <div class="col s12 center pointer" onclick="window.open('https://github.com/danielrobinson95/', '_blank')">
-          <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-          <h4 class="flow-text">https://github.com/danielrobinson95/</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 center pointer" onclick="window.open('https://www.linkedin.com/in/danielrobinson95/', '_blank')">
-          <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>
-          <h4 class="flow-text">https://www.linkedin.com/in/danielrobinson95/</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 center pointer" onclick="window.location('mailto:danielrobinson095@gmail.com')";>
-          <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-          <h4 class="flow-text">danielrobinson095@gmail.com</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="background-color: #78909c;">
-    &nbsp;
-  </div>
-  <nav data-target="about" style="top: 0px;" class="pushpin-nav">
-    <div class="nav-wrapper blue-grey darken-1">
-      <a href="#" class="brand-logo center" id="about_text">About Me</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-    <div id="place">&nbsp;</div>
-  </nav>
-  <nav data-target="technology" style="top: 0px;" class="pushpin-nav">
-    <div class="nav-wrapper  blue-grey lighten-3">
-      <a href="#" class="brand-logo center">Technology</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <!-- <nav data-target="education" style="top: 0px;" class="pushpin-nav">
-    <div class="nav-wrapper  blue-grey lighten-2">
-      <a href="#" class="brand-logo center">Education</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav> -->
-  <nav data-target="connect" style="top: 0px;" class="pushpin-nav">
-    <div class="nav-wrapper blue-grey lighten-1">
-      <a href="#" class="brand-logo center">Connect</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <!-- <nav data-target="experience" style="top: 0px;" class="pushpin-nav">
-    <div class="nav-wrapper blue-grey darken-2">
-      <a href="#" class="brand-logo center" id="experience_text">Experience</a>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav> -->
 </body>
-
 </html>
 
-<script src="https://use.fontawesome.com/2ee3ed9a96.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/materialize.min.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.4.0/typeit.min.js"></script>
-<script src="js/portfolio.min.js"></script>
+<script src="resources/js/custom.js"></script>
+<script src="https://use.fontawesome.com/306b98adbe.js"></script>
+
+
+<!-- http://mattfarley.ca/ -->
